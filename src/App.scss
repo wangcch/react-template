@@ -26,3 +26,15 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.App-nav {
+  .nav-link {
+    color: #606266;
+    padding: 6px 16px;
+    text-decoration: none;
+  }
+  .nav-link_active {
+    color: #303133;
+    text-decoration: underline;
+  }
+}
