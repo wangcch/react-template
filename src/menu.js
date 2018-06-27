@@ -5,10 +5,12 @@ const menuData = [
 	{
 		path: '/',
 		component: Home,
+		name: 'Home',
 		exact: true
 	}, {
 		path: '/about',
 		component: About,
+		name: 'About',
 		exact: true
 	}
 ]
