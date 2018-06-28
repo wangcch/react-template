@@ -1,6 +1,10 @@
-# React template
+# React-template
 
 React page template (React + React Router + SCSS)
+
+<p align="center">
+	<img src="./react-template.gif" width="600"/>
+</p>
 
 ## Setup
 

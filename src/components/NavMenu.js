@@ -8,7 +8,7 @@ const NavMenu = () => (
     {getMenuData().map((route, index) => (
       <NavLink
         exact={route.exact}
-        key={index}
+        key={route.name + index}
         to={route.path}
         className="nav-link"
         activeClassName="nav-link_active"

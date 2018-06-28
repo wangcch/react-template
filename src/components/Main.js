@@ -13,8 +13,8 @@ const RouteWithSubRoutes = route => (
 const Main = () => (
   <main>
     <Switch>
-      {getMenuData().map((route, i) => (
-        <RouteWithSubRoutes key={i} {...route} />
+      {getMenuData().map((route, index) => (
+        <RouteWithSubRoutes key={route.name + index} {...route} />
       ))}
     </Switch>
   </main>
