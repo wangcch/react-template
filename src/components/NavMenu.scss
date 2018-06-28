@@ -1,0 +1,14 @@
+nav.navmenu {
+  .nav-link {
+    text-decoration: none;
+    margin-left: 10px;
+		color: inherit;
+		font-weight: bold;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  .nav-link_active {
+    text-decoration: underline;
+  }
+}
