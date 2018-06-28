@@ -1,0 +1,26 @@
+.logo {
+	position: relative;
+	display: inline-block;
+	.logo_content {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+  .logo_icon {
+    height: 30px;
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .logo_title {
+		font-size: 22px;
+		margin: 0;
+	}
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
