@@ -3,9 +3,9 @@ import "@/components/Header.scss";
 import Logo from "@/components/Logo";
 import NavMenu from "@/components/NavMenu";
 
-const Header = () => (
+const Header = ({ title }) => (
   <header>
-    <Logo />
+    <Logo title={title} />
     <NavMenu />
   </header>
 );

@@ -4,12 +4,14 @@ import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Footer from "@/components/Footer";
 
+const webTitle = "React-template";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="rt-wrap">
-          <Header />
+          <Header title={webTitle} />
         </div>
         <Main />
         <Footer />
