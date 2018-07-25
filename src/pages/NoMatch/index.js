@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 class NoMatch extends Component {
   render() {
-    return <div>404</div>;
+    return (
+      <div>
+        <p align="center">404</p>
+      </div>
+    );
   }
 }
 
