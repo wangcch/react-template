@@ -1,21 +1,19 @@
 import React, { Component } from "react";
-import "@/App.scss";
-import Header from "@/components/Header";
-import Main from "@/components/Main";
-import Footer from "@/components/Footer";
+import { Route, Switch } from 'react-router-dom';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import NoMatch from "./pages/NoMatch";
 
-const webTitle = "React-template";
+import DefaultLayput from "./layouts/DefaultLayout";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="rt-wrap">
-          <Header title={webTitle} />
-        </div>
-        <Main />
-        <Footer />
-      </div>
+      <Switch>
+        <DefaultLayput exact path="/" component={Home} />
+        <DefaultLayput exact path="/about" component={About} />
+        <Route exact component={NoMatch} />
+      </Switch>
     );
   }
 }
