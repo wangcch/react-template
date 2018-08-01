@@ -5,6 +5,7 @@ import About from "./pages/About";
 import NoMatch from "./pages/NoMatch";
 
 import DefaultLayput from "./layouts/DefaultLayout";
+import OtherLayout from "./layouts/OtherLayout";
 
 class App extends Component {
   render() {
@@ -24,7 +25,7 @@ class App extends Component {
     return (
       <Switch>
         <LayoutRoute exact path="/" component={Home} layout={DefaultLayput} />
-        <LayoutRoute exact path="/about" component={About} layout={DefaultLayput} />
+        <LayoutRoute exact path="/about" component={About} layout={OtherLayout} />
         <Route exact component={NoMatch} />
       </Switch>
     );
