@@ -8,16 +8,19 @@ import DefaultLayput from "./layouts/DefaultLayout";
 
 class App extends Component {
   render() {
-    const LayoutRoute = ({ component, layout: Layout, ...rest }) => {
+    const LayoutRoute = ({ component: Component, layout: Layout, ...rest }) => {
       return (
         <Route
           {...rest}
-          render={props => {
-            return <Layout component={component} {...props} />;
-          }}
+          render={props => (
+            <Layout>
+              <Component {...props} />
+            </Layout>
+          )}
         />
       );
-    };
+    }
+
     return (
       <Switch>
         <LayoutRoute exact path="/" component={Home} layout={DefaultLayput} />
