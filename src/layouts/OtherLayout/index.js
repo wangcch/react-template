@@ -1,15 +1,14 @@
 import React, { Fragment } from "react";
 import NavMenu from "../../components/NavMenu";
 
-const DefaultLayout = props => (
+const OtherLayout = props => (
   <Fragment>
     <header>
-      header
+      other layout
       <NavMenu />
     </header>
     <main>{props.children}</main>
-    <footer>footer</footer>
   </Fragment>
 );
 
-export default DefaultLayout;
+export default OtherLayout;
