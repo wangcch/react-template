@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import NoMatch from "./pages/NoMatch";
+import Home from "@/pages/Home";
+import About from "@/pages/About";
+import NoMatch from "@/pages/NoMatch";
 
-import DefaultLayput from "./layouts/DefaultLayout";
-import OtherLayout from "./layouts/OtherLayout";
+import DefaultLayput from "@/layouts/DefaultLayout";
+import OtherLayout from "@/layouts/OtherLayout";
 
 class App extends Component {
   render() {

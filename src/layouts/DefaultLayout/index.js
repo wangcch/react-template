@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import NavMenu from "../../components/NavMenu";
+import NavMenu from "@/components/NavMenu";
 
 const DefaultLayout = props => (
   <Fragment>
