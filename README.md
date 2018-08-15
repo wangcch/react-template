@@ -5,8 +5,8 @@ React page template (React + React Router + SCSS)
 ## Setup
 
 ```
-$ git clone https://github.com/wangcch/react-template.git
-$ cd react-template
+$ git clone --depth=1 https://github.com/wangcch/react-template.git your-project-name
+$ cd your-project-name
 ```
 
 ### yarn
@@ -34,6 +34,27 @@ $ npm start
 # build for production with minification
 $ npm run build
 ```
+
+## Webpack Options
+
+```js
+/* config-overrides.js */
+const path = require('path');
+const rewireSass = require("react-app-rewire-scss");
+
+module.exports = function override(config, env) {
+  config = rewireSass(config, env);
+  config.resolve = {
+    alias: {
+      "@": path.resolve("src")
+    }
+  };
+  return config;
+};
+```
+
+[Extended Configuration Options](https://github.com/timarney/react-app-rewired#extended-configuration-options)
+
 
 ## License
 
